@@ -1,0 +1,9 @@
+.jumbotron{
+    background-image: url('../image/porter.jpg');
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    color: #eee;
+    width: 100%;
+}
+

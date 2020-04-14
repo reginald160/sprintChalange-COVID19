@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid -19 Statistics App</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+</head>
+<body>
+<section class="container-fluid">
+    <div class="row">
+      <div class=" col-md-12">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <span id="globalresult"></span>
+      
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+</div>
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+  <a class="navbar-brand" href="#">COVID-19</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse nav2" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+    </ul>
+  
+  </div>
+</nav>  
+    <h1 class="bg-default">COVID-19 Dashboard by Codebits Academy,Nigeria</h1>
+<section class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 mt-4 text-left pr-0">
+      <h3 class="text-danger">Country Cases</h3>
+      <div id="status3"></div>
+    </div>
+    <div class="col-md-9 covi mt-4 pl-1">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-8">
+            <img src="image/covid.jpg" alt="covid-19" width="100% mt-4">
+          </div>
+          <div class="col-md-4"><div id="status2"></div></div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div id="status1"></div>
+          </div>
+          <div class="col-md-4 graph">
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div><script>
+window.onload = function CovidPieChart()  {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  animationEnabled: true,
+  title: {
+    text: "Percentage of Death"
+  },
+  data: [{
+    type: "pie",
+    startAngle: 240,
+    yValueFormatString: "##0.00\"%\"",
+    indexLabel: "{label} {y}",
+    dataPoints: [
+      {y: 10.05, label: "USA"},
+      {y: 6.02, label: "Italy"},
+      {y: 7.06, label: "france"},
+      {y: 7.08, label: "Germany"},
+      {y: 7.78, label: "Uk"},
+      {y: 5.06, label: "Iran"},
+      {y: 2.26, label: "Turkey"}
+      {y: 5.16, label: "Iran"}
+    ]
+  }]
+});
+chart.render();
+
+}
+</script></div>
+        </div>
+      </div>
+  
+    </div>
+
+  </div>
+  
+  </div>
+  
+</section>    
+
+<section class="container-fluid mt-4">
+
+  <div class="card text-center">
+  <div class="card-header text-danger bg-dark">
+    <h3>Maintain social distancing</h3>
+    
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">WHY ?</h5>
+    <p class="card-text"><h3>When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease</h3></p>
+    <a href="#" class="btn btn-danger">Read more</a>
+  </div>
+  <div class="card-footer text-muted text-white bg-dark">
+    <span><a>&copy; Ozougwu Ifeanyi 2020</a></span>
+  </div>
+</div>
+</section>
+
+    
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

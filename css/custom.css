@@ -1,0 +1,38 @@
+
+body{
+   background-image: url(../image/img.jpg);
+   position: center;
+   background-repeat:no-repeat;
+}
+h1{
+	background-color: white;
+	text-align: center;
+}
+
+.global-card{
+	width: 27rem;
+	height: 8rem;
+
+}
+
+.covi img{
+	height: 27rem;
+}
+.global{
+	width: 120%;
+}
+
+#status3{
+	overflow: auto;
+	height: 100vh;
+	width: 15rem;
+	padding-right: 0;
+	padding-left: 0;
+}
+.table-hover{
+	width: 100%;
+
+}
+.graph{
+	height: 15rem;
+}
